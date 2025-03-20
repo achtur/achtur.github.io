@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infos Arthur</title>
-</head>
-<body>
-    <div>
-      <h1>Hello World</h1>
+  <head>
+    <!--Styles et linkrel des pages -->
+    <div id="heads"></div>
+
+    <title>Arthur - Accueil</title>
+  </head>
+
+  <body class="cursor_active">
+    <!--Curseur rond-->
+    <div id="curseur-rond">
     </div>
-</body>
+   
+    <!--Barre de Navigation du haut-->
+    <div id="header"></div>
+
+    <!--Body de la page-->
+    <div class="body">
+      <!--Vidéo d'arrière plan-->
+      <video
+        id="body-banner"
+        src="files/vid/porsche.mp4"
+        alt="vidéo-bannière"
+        autoplay
+        loop
+      ></video>
+      <!--Conteneurs de boutons-->
+      <div class="bg-sound-control-container unselectable_text">
+        <div class="sound-control-btns btn">
+          <!--Les boutons du volume-->
+          <img
+            class="sound-icon vcactive undraggable"
+            id="icon"
+            src="files/logo/sound-off.png"
+            alt="sound-off"
+          />
+          <img
+            class="sound-icon undraggable"
+            id="icon"
+            src="files/logo/sound-on-stage-1.png"
+            alt="sound-on-stage-1"
+          />
+          <img
+            class="sound-icon undraggable"
+            id="icon"
+            src="files/logo/sound-on-stage-2.png"
+            alt="sound-on-stage-2"
+          />
+          <img
+            class="sound-icon undraggable"
+            id="icon"
+            src="files/logo/sound-on-stage-3.png"
+            alt="sound-on-stage-3"
+          />
+      </div>
+      
+      <!--Barre de Navigation du bas-->
+      <div id="footer">
+      </div>
+
+    </div>
+  </body>
+  
+  <!--Les scripts communs -->
+  <script src="/js/scripts_communs.js"></script>
+  
+  <!--Les scripts de la page web-->
+  
 </html>

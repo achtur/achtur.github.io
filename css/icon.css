@@ -1,0 +1,12 @@
+.sound-off {
+    content: url('../files/logo/sound-off.png');
+}
+.sound-on-stage-1 {
+    content: url('../files/logo/sound-on-stage-1.png');
+}
+.sound-on-stage-2 {
+    content: url('../files/logo/sound-on-stage-2.png');
+}
+.sound-on-stage-3 {
+    content: url('../files/logo/sound-on-stage-3.png');
+}

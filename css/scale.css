@@ -1,0 +1,50 @@
+@media screen and (max-width: 600px) {
+  * {
+    padding: 0;
+    flex-direction: column;    
+  }
+  #curseur-rond {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+    .logo-container, .nav_links, .end-link{
+  display: flex;  
+  flex-direction: reverse;
+}
+
+    li, a, button{
+      font-family: 'Bitter', serif;
+      font-weight: 500;
+      font-size: calc(4px + (10 - 4) * ((100vw + 300px) / (1600 - 300)));
+      color: white;
+      text-decoration: none;
+  }
+  .logo-container{
+    transform: scale(2);
+    padding: 5px 0px 0px 0px;
+    margin: 5px 0px 15px 0px;
+  }
+  .logo-container:hover {
+    transform: scale(2.2);
+    padding: 5px 0px 0px 0px;
+  }
+  .page-footer-middle-link {
+    transition: 0.5s ease-in-out 0s;
+  }
+  .page-footer-logo-container:hover, .page-footer-middle-link:hover {
+    transform: scale(1.2);
+  }
+
+  .accueil{
+    margin: 0px 0px 10px 0px;
+  }
+  .end-links {
+    margin: 8px 0px 0px 0px;
+  }
+  .header-nav-links, li {
+    margin: 4px 0px 4px 0px;
+  }
+  .nav-link:hover, .page-footer-nav-link:hover, .cgu:hover{
+    margin: 0px 2px 0px 0px;
+  }
+}
