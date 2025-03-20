@@ -7,6 +7,7 @@ padding: 0;
 box-sizing: border-box;
 }
 
+
 body.cursor_active {
   cursor: none;
   animation: transition-out 0.75s;
@@ -132,8 +133,9 @@ button {
 }
 
 /* item non draggable*/
-.undraggable {
+.undraggable, #img_vid {
   -webkit-user-drag: none;
+  user-select: none;
 }
 /* text non selectable*/
 .unselectable_text {
@@ -216,7 +218,8 @@ nav {
   padding: 0px 8px;
 }
 
-#body-banner {
+/* Images */
+#img_vid, #body-banner {
   width: 100vw;
   display: block;
 }
@@ -252,6 +255,36 @@ nav {
 /*Text top imgs*/
 .toptxt {
   margin-top: calc(-1 * calc(230px + (10 - 4) * ((100vw + 300px) / (1600 - 300))));
+}
+.btmtxt_50 {
+  margin-bottom: calc(-1 * calc(50px + (10 - 4) * ((100vw + 300px) / (1600 - 300))));
+}
+.btmtxt_70 {
+  margin-bottom: calc(-1 * calc(70px + (10 - 4) * ((100vw + 300px) / (1600 - 300))));
+}
+.btmtxt_75 {
+  margin-bottom: calc(-1 * calc(75px + (10 - 4) * ((100vw + 300px) / (1600 - 300))));
+}
+.btmtxt_150 {
+  margin-bottom: calc(-1 * calc(150px + (10 - 4) * ((100vw + 300px) / (1600 - 300))));
+}
+.btmtxt_165 {
+  margin-bottom: calc(-1 * calc(165px + (10 - 4) * ((100vw + 300px) / (1600 - 300))));
+}
+.btmtxt_300 {
+  margin-bottom: calc(-1 * calc(300px + (10 - 4) * ((100vw + 300px) / (1600 - 300))));
+}
+.btmtxt_400 {
+  margin-bottom: calc(-1 * calc(400px + (10 - 4) * ((100vw + 300px) / (1600 - 300))));
+}
+.btmtxt_530 {
+  margin-bottom: calc(-1 * calc(530px + (10 - 4) * ((100vw + 300px) / (1600 - 300))));
+}
+.btmtxt_700 {
+  margin-bottom: calc(-1 * calc(700px + (10 - 4) * ((100vw + 300px) / (1600 - 300))));
+}
+.btmtxt_800 {
+  margin-bottom: calc(-1 * calc(800px + (10 - 4) * ((100vw + 300px) / (1600 - 300))));
 }
 
 /*CORP DE PAGE*/
@@ -294,6 +327,24 @@ cursor {
   transform: scale(2);
 }
 
+
+
+/*-----------------------------------------------*/
+/* Portfolio */
+/*-----------------------------------------------*/
+
+.txt_bvn {
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  font-size: calc(8px + (20 - 6) * ((100vw - 300px) / (1600 - 300)));
+  padding: 1vw;
+  border: 5px solid rgb(127, 254, 246); /* Bordure noire de 2px */
+  border-radius: 1px; /* Coins arrondis (facultatif) */
+  background-color: #f9f8f8; /* Fond léger pour rendre le rectangle visible */
+  width: 90%;
+
+}
+
 /* Carouselle */
 .carousel {
   position: relative;
@@ -306,10 +357,10 @@ cursor {
   /* Empêche les éléments de se placer sur plusieurs lignes */
 }
 
-.carousel_img {
+.carousel_img, .hover_img {
   transition: 0.5s ease 0s;
   }
-  .carousel_img:hover {
+  .carousel_img:hover, .hover_img:hover  {
     transform: scale(1.05);
   }
   .carousel_btn{
@@ -466,7 +517,7 @@ footer {
   list-style-type: "\2B9A";
   transform: scale(0.95);
 }
-.moto {
+.list_none {
   list-style-type: none;
 }
 .cgu:hover {
