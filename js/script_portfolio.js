@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* bouton portfolio_accordeon01 */
   function btn_active(btn_state, btn_selector) {
+    const projprofe_btn = document.getElementsByClassName("projprof");
     if(btn_state === 1) {
       btn_selector.classList.add("btn_active")
     }

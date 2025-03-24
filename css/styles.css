@@ -347,10 +347,6 @@ cursor {
   padding-bottom: calc(0.1vw * scale);
   transform-origin: top center; /* Évite un décalage vers le bas */
 }
-.toTC {
-  width: fit-content;
-  height: fit-content;
-}
 
 .folio_pdf {
   user-select: none;
@@ -530,12 +526,14 @@ footer {
 
 
 .projpers, .projprof{
+  font-size: calc(8px + (19 - 6) * ((100vw - 300px) / (1600 - 300))); /*20 taille txt*/
   transition: 0.5s ease 0s;
   list-style-type: "\2B9B";
 }
 .projpers:hover, .projprof:hover{
   
-  margin: 0px 0px 0px 20px;
+  margin: 0px 0px 0px 4vw !important;
+  opacity: 0.8;
 }
 
 .projpers.btn_active, .projprof.btn_active{
