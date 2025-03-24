@@ -224,19 +224,15 @@ nav {
   display: block;
 }
 
-.folio_img {
-  user-select: none;
-  display: flex;
-  padding-bottom: calc(0.1vw * scale);
-  scale: 0.8;
-  border-radius: 2em;
-}
-.folio_pdf {
-  user-select: none;
-  padding-bottom: calc(1vw * scale);
-  border-radius: 2em;
-}
 
+.anglais-scale {
+  margin-bottom: 55vh;
+  width: 92%;
+  height: 92%;
+}
+.scale-40 {
+  scale: .4;
+}
 .scale-50 {
   scale: .5;
 }
@@ -256,9 +252,9 @@ nav {
 .toptxt {
   margin-top: calc(-1 * calc(230px + (10 - 4) * ((100vw + 300px) / (1600 - 300))));
 }
-.btmtxt_50 {
-  margin-bottom: calc(-1 * calc(50px + (10 - 4) * ((100vw + 300px) / (1600 - 300))));
-}
+.btmtxt_15 {
+  margin-bottom: calc(1 * calc(15px + (10 - 4) * ((100vw + 300px) / (1600 - 300))));
+/* }
 .btmtxt_70 {
   margin-bottom: calc(-1 * calc(70px + (10 - 4) * ((100vw + 300px) / (1600 - 300))));
 }
@@ -284,7 +280,7 @@ nav {
   margin-bottom: calc(-1 * calc(700px + (10 - 4) * ((100vw + 300px) / (1600 - 300))));
 }
 .btmtxt_800 {
-  margin-bottom: calc(-1 * calc(800px + (10 - 4) * ((100vw + 300px) / (1600 - 300))));
+  margin-bottom: calc(-1 * calc(800px + (10 - 4) * ((100vw + 300px) / (1600 - 300)))); */
 }
 
 /*CORP DE PAGE*/
@@ -333,6 +329,36 @@ cursor {
 /* Portfolio */
 /*-----------------------------------------------*/
 
+.description {
+  margin-bottom: 20px; /* Espace entre le texte et l'image */
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Prend toute la largeur */
+  position: relative; /* Permet d'ajuster la position */
+}
+
+.folio_img {
+  user-select: none;
+  display: flex;
+  border-radius: 2em;
+  padding-bottom: calc(0.1vw * scale);
+  transform-origin: top center; /* Évite un décalage vers le bas */
+}
+.toTC {
+  width: fit-content;
+  height: fit-content;
+}
+
+.folio_pdf {
+  user-select: none;
+  padding-bottom: calc(1vw * scale);
+  border-radius: 2em;
+}
+
+
 .txt_bvn {
   font-family: "Bitter", serif;
   font-weight: 500;
@@ -361,7 +387,7 @@ cursor {
   transition: 0.5s ease 0s;
   }
   .carousel_img:hover, .hover_img:hover  {
-    transform: scale(1.05);
+    transform: scale(1.05) translateY(-4.00vh);
   }
   .carousel_btn{
     border-radius: 1vw;
